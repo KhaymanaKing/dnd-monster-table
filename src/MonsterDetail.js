@@ -9,7 +9,7 @@ export default function MonsterDetail() {
 
   useEffect(() => {
     async function loadNpc(){
-      const npcData = await getMonster(params.id);
+      const npcData = await getMonster(params.name);
       setMonsterDetail(npcData);
     }
     loadNpc();
