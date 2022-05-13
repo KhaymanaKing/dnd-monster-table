@@ -14,6 +14,5 @@ export async function getMonster(id){
     .select()
     .match({ id })
     .single();
-  console.log(response);
   return checkError(response);
 }

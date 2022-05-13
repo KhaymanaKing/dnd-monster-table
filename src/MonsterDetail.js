@@ -7,7 +7,6 @@ export default function MonsterDetail() {
   const params = useParams();
   const [monsterDetail, setMonsterDetail] = useState({});
   
-  console.log(params);
   useEffect(() => {
     async function loadNpc(){
       const npcData = await getMonster(params.id);
