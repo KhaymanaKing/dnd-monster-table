@@ -17,7 +17,7 @@ function App() {
           <Route exact path='/'>
             <MonstersPage/>
           </Route>
-          <Route path='/monsters/:name'>
+          <Route path='/monsters/:id'>
             <MonsterDetail />
           </Route>
         </Switch>
