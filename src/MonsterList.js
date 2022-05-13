@@ -5,7 +5,7 @@ export default function MonsterList({ monsters }){
   return (
     <div className='monsters'>
       {
-        monsters.map(monster => <Monster key={monster.name} monster={monster}/>)
+        monsters.map(monster => <Monster key={monster.id} monster={monster}/>)
       }
     </div>
   );

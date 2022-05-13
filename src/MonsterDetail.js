@@ -9,12 +9,12 @@ export default function MonsterDetail() {
 
   useEffect(() => {
     async function loadNpc(){
-      const npcData = await getMonster(params.name);
+      const npcData = await getMonster(params.id);
       setMonsterDetail(npcData);
     }
     loadNpc();
   }, [params]);
-
+  console.log(monsterDetail);
   return (
     <>
       <Link to='/'>Home</Link>

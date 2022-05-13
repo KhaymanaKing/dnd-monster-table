@@ -4,23 +4,25 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
-import './App.css';
 import MonsterDetail from './MonsterDetail';
-import MonsterPage from '/MonsterPage';
+import MonstersPage from './MonstersPage';
+import './App.css';
+
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      </header>
-      <Switch>
-        <Route exact path='/'>
-          <MonsterPage/>
-        </Route>
-        <Route path='/monsters/:name'>
-          <MonsterDetail />
-        </Route>
-      </Switch>
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route exact path='/'>
+            <MonstersPage/>
+          </Route>
+          <Route path='/monsters/:name'>
+            <MonsterDetail />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
